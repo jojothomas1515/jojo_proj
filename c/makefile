@@ -1,5 +1,2 @@
-main.o:main.c
-	cc main.c -l myusefulfunc.o -o main.o
-	echo "done"
-main.c:myusefulfunc.c
-	cc myusefulfunc.c myusefulfunc.h -o myusefulfunc.o
+bin:main.c myusefulfunc.c myusefulfunc.h
+	cc main.c myusefulfunc.c myusefulfunc.h -o bin
